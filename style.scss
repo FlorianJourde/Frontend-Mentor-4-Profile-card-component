@@ -16,8 +16,8 @@ body {
   font-size: 1em;
   height: 100vh;
   background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
-  background-position: top -480px left 0, bottom -480px right 0;
-  background-size: contain;
+  background-attachment: fixed;
+  background-position: right 50vw bottom 40vh, left 50vw top 50vh;
   background-repeat: no-repeat;
 }
 
@@ -43,7 +43,7 @@ h1 {
   margin: auto;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 30px 200px hsla(1, 0%, 0%, 0.4);
+  box-shadow: 0 30px 200px hsla(1, 0%, 0%, 0.2);
 
   .bg-card {
     border-top-left-radius: inherit;
@@ -105,11 +105,5 @@ h1 {
         letter-spacing: 0.1rem;
       }
     }
-  }
-}
-
-@media screen and (max-width: 500px) {
-  body {
-    background-position: top 0 left -150px, bottom 0 right -150px;
   }
 }
